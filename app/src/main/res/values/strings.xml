@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Travel Planner</string>
+    <string-array name="trip_history_array">
+        <item>Johannesburg → Cape Town (12 Aug 2025)</item>
+        <item>Pretoria → Durban (5 Aug 2025)</item>
+        <item>Sandton → OR Tambo Airport (1 Aug 2025)</item>
+        <item>Midrand → Rosebank (28 Jul 2025)</item>
+        <item>Cape Town → Stellenbosch (20 Jul 2025)</item>
+    </string-array>
+    <string-array name="languages">
+        <item>English</item>
+        <item>Zulu</item>
+
+    </string-array>
+    <string name="invalid_coords">Invalid coordinates</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="notifications">Notifications</string>
+    <string name="language">Language</string>
+    <string name="user_name">Name</string>
+    <string name="user_email">Email</string>
+    <string name="notifications_enabled">Notifications enabled</string>
+    <string name="notifications_disabled">Notifications disabled</string>
+
+    <string name="welcome_text">Welcome to GUIDE</string>
+    <string name="route_planning">🚗 Route Planning</string>
+    <string name="weather_info">☀️ Weather Info</string>
+    <string name="trip_history">📖 Trip History</string>
+    <string name="offline_mode">📶 Offline Mode</string>
+
+
+    <string name="startPoint" type="id">startPoint</string>
+    <string name="endPoint" type="id">endPoint</string>
+    <string name="findRouteBtn" type="id">findRouteBtn</string>
+    <string name="routeResult" type="id">routeResult</string>
+
+
+    <string name="start_location">Start Location</string>
+    <string name="destination">Destination</string>
+    <string name="find_route">Find Route</string>
+    <string name="route_placeholder">Route details will appear here</string>
+    <string name="recent_searches">Recent Searches</string>
+    <string name="recent_1">📍 Braamfontein → Sandton</string>
+    <string name="recent_2">📍 Soweto → Rosebank</string>
+    <string name="recent_3">📍 Pretoria → OR Tambo</string>
+    <string name="enter_both">Enter both locations</string>
+    <string name="no_result_start">Could not find start location</string>
+    <string name="no_result_end">Could not find destination</string>
+    <string name="route_summary">Distance: %.2f km\nDuration: %.1f min</string>
+
+</resources>

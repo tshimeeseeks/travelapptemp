@@ -1,0 +1,52 @@
+<resources>
+    <!-- App Info -->
+    <string name="app_name">UhamboApp</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Izilungiselelo</string>
+    <string name="dark_mode">Imodi Emnyama</string>
+    <string name="notifications">Izaziso</string>
+    <string name="language">Ulimi</string>
+    <string name="user_name">Igama</string>
+    <string name="user_email">I-imeyili</string>
+
+    <!-- Languages -->
+    <string-array name="languages">
+        <item>IsiNgisi</item>
+        <item>IsiZulu</item>
+
+    </string-array>
+    <string name="invalid_coords">Izixhumanisi ezingavumelekile</string>
+
+
+    <!-- Toasts -->
+    <string name="notifications_enabled">Izaziso zivuliwe</string>
+    <string name="notifications_disabled">Izaziso zivaliwe</string>
+
+    <string name="welcome_text">Uyemukelwa ku-GUIDE</string>
+    <string name="route_planning">🚗 Ukuhlelwa Kwendlela</string>
+    <string name="weather_info">☀️ Ulwazi Lwesimo Sezulu</string>
+    <string name="trip_history">📖 Umlando Wokuhamba</string>
+    <string name="offline_mode">📶 Imodi Engaxhunyiwe</string>
+
+    <string name="startPoint" type="id">indawoYokuqala</string>
+    <string name="endPoint" type="id">indawoYokugcina</string>
+    <string name="findRouteBtn" type="id">tholaUmzilaBtn</string>
+    <string name="routeResult" type="id">umphumelaWomzila</string>
+
+
+    <string name="start_location">Indawo Yokuqala</string>
+    <string name="destination">Indawo Oya Kuyo</string>
+    <string name="find_route">Thola Umzila</string>
+    <string name="route_placeholder">Imininingwane yomzila izovela lapha</string>
+    <string name="recent_searches">Izindawo Ezisanda Kufunwa</string>
+    <string name="recent_1">📍 Braamfontein → Sandton</string>
+    <string name="recent_2">📍 Soweto → Rosebank</string>
+    <string name="recent_3">📍 Pretoria → OR Tambo</string>
+
+    <string name="enter_both">Faka izindawo zombili</string>
+    <string name="no_result_start">Ayitholakalanga indawo yokuqala</string>
+    <string name="no_result_end">Ayitholakalanga indawo oya kuyo</string>
+    <string name="route_summary">Ibanga: %.2f km\nIsikhathi: %.1f imizuzu</string>
+
+</resources>
