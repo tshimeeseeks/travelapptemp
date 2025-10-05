@@ -105,7 +105,7 @@ class WeatherFragment : Fragment() {
         
         locationText.text = "${weather.name}, ${weather.sys.country}"
         temperatureText.text = "${weather.main.temp.toInt()}°C"
-        conditionText.text = weather.weather.firstOrNull()?.description?.capitalize() ?: "Unknown"
+        conditionText.text = weather.weather.firstOrNull()?.description?.replaceFirstChar { it.uppercase() } ?: "Unknown"
         humidityText.text = "Humidity: ${weather.main.humidity}%"
         windSpeedText.text = "Wind: ${weather.wind.speed} m/s"
     }
