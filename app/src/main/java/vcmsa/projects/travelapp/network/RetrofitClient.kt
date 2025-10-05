@@ -4,12 +4,14 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import vcmsa.projects.travelapp.api.GoogleDirectionsApiService
 import vcmsa.projects.travelapp.api.WeatherApiService
 import java.util.concurrent.TimeUnit
 
 object RetrofitClient {
     private const val ROUTE_BASE_URL = "https://api.openrouteservice.org/"
     private const val WEATHER_BASE_URL = "https://api.openweathermap.org/data/2.5/"
+    private const val GOOGLE_MAPS_BASE_URL = "https://maps.googleapis.com/maps/api/"
 
     private val loggingInterceptor = HttpLoggingInterceptor().apply {
         level = HttpLoggingInterceptor.Level.BODY
@@ -38,6 +40,14 @@ object RetrofitClient {
             .build()
     }
 
+    private val googleMapsRetrofit: Retrofit by lazy {
+        Retrofit.Builder()
+            .baseUrl(GOOGLE_MAPS_BASE_URL)
+            .client(okHttpClient)
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+    }
+
     val routeApi: vcmsa.projects.travelapp.RouteApiService by lazy {
         routeRetrofit.create(vcmsa.projects.travelapp.RouteApiService::class.java)
     }
@@ -48,5 +58,9 @@ object RetrofitClient {
 
     val weatherApi: WeatherApiService by lazy {
         weatherRetrofit.create(WeatherApiService::class.java)
+    }
+
+    val googleDirectionsApi: GoogleDirectionsApiService by lazy {
+        googleMapsRetrofit.create(GoogleDirectionsApiService::class.java)
     }
 }
